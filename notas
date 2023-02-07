@@ -1,0 +1,11 @@
+href = referencia a otro docuemnto
+a = crear enlaces a otras páginas
+id = nombre del elemento
+nav = menús, índices, tablas de contenido
+ul = lista no ordenada
+li = los elementos de la lista, va dentro de ul
+ol = lista ordenada numerada
+class = el elemento como esté llamado en css
+img = imagen
+src = referenciar dentro de img
+alt = para nombrar a la imagen nada más
