@@ -80,6 +80,21 @@ div#slider {background-image: url('../images/imagen1.png');
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Nova;
+    font-size: 39px;
+    color: black;
+    text-shadow: -1px -1px 1px white;
 }
 
 .foto2 {
