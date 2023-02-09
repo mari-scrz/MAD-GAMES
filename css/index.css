@@ -55,7 +55,6 @@ div#slider {background-image: url('../images/imagen1.png');
     100% {background-image: url('../images/imagen5.png');}
 }
 
-
 .centrado{
     position: absolute;
     top: 50%;
@@ -97,9 +96,12 @@ div#slider {background-image: url('../images/imagen1.png');
     text-shadow: -1px -1px 1px white;
 }
 
-.foto2 {
-    margin-top: 80px;
+.foto1 {margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;}
+  
+.foto2 {margin-top: 80px;
     margin-right: 20px;
     margin-left: 20px;
-    margin-bottom: 50px;
-}
+    margin-bottom: 50px;}
