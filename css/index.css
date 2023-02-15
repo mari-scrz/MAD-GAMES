@@ -6,7 +6,7 @@ header {
     font-size: 21px;
     width: 100%;
     z-index: 2;
-    margin: -8px; /* por default html tiene margen de 8px */
+
 }
 
 nav { 
@@ -33,11 +33,13 @@ a {
     src: url('../fonts/Nova/Nova.otf')
 }
 
+body {margin: 0;} /*ahora ya todo está pegado*/
+
 div#slider {background-image: url('../images/imagen1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 10px);
+    height: calc(105vh);
 
     animation: changegojira 10s infinite;
     animation-delay: 0.10s;
