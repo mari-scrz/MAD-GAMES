@@ -84,6 +84,15 @@ div#slider {background-image: url('../images/imagen1.png');
     text-align: center;
 }
 
+.foto2 {margin-top: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
 .centrado2 {
     position: absolute;
     top: 50%;
@@ -92,16 +101,39 @@ div#slider {background-image: url('../images/imagen1.png');
     text-align: center;
     font-family: Nova;
     font-size: 39px;
+    text-align:center;
     color: black;
-    text-shadow: -1px -1px 1px white;
+    line-height: 70%;
+    letter-spacing: 4px;
+    text-shadow: -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff, 2px 2px 0px #fff;
 }
 
-.foto1 {margin-top: 80px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;}
-  
-.foto2 {margin-top: 80px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 50px;}
+.info {
+    display: flex;
+    background-color: white;
+    align-items: left;
+    justify-content: left;
+}
+
+.info1 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: Nova;
+}
+
+.info2 {
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
