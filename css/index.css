@@ -84,7 +84,8 @@ div#slider {background-image: url('../images/imagen1.png');
     text-align: center;
 }
 
-.foto2 {margin-top: 80px;
+.foto2 {
+    margin-top: 80px;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 50px;
@@ -136,4 +137,27 @@ div#slider {background-image: url('../images/imagen1.png');
     position: relative;
     display: inline-block;
     text-align: left;
+}
+
+.formulario {
+    display: block;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    width: 78em;
+    margin-left: auto;
+    margin-right: auto; /* para que esté en medio */
+}
+
+.jobsletter {
+    font-size: 55px;
+    font-family: Nova;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.caption {
+    color: gray;
+    text-align: center;
 }
