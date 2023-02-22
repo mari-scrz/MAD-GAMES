@@ -144,7 +144,7 @@ div#slider {background-image: url('../images/imagen1.png');
 .formulario {
     display: block;
     align-items: center;
-    background-color: black;
+    background-color: #161719;
     justify-content: center;
     width: 78em;
     height: 19em;
@@ -219,17 +219,16 @@ input::placeholder {
 }
 
 .infofinal {
-    background: #c6c6c6;
-    margin-top: 130px;
-    padding-bottom: 25px;
-    padding-top: 50px;
+    margin-top: 110px;
+    padding-bottom: 20px;
     display: flex;
-    background-color: white;
-    align-items: center;
+    background-color: #f6f6f6;
+    align-items: left;
     justify-content: center;
 }
+/*la sección*/
 
-.location::after{
+.letras::after{
     background: #0e1a23;
     content: " ";
     display: block;
@@ -237,23 +236,85 @@ input::placeholder {
     margin-bottom: 20px;
     width: 45px;
 }
+/*la ralla*/
 
 .location {
-    margin-top: 80px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 50px;
     position: relative;
     display: inline-block;
     text-align: left;
+    color: #d11a20;
+    font-family: Nova;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+/*el texto*/
+
+.fotolocation {
+    display: flex;
+    height: 290px;
+    margin-bottom: 27px;
+    position: relative;
+    margin-right: 20px;
+}
+/*la foto*/
+
+.infolocation {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: Nova;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: none;
 }
 
 .contact {
-    margin-top: 80px;
-    margin-right: 20px;
+    margin-top: 10px;
     margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 50px;
     position: relative;
     display: inline-block;
     text-align: left;
+    color: #d11a20;
+    font-family: Nova;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contact-info-title {
+    color: #171717;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 11px;
+}
+
+.contact-info-enlace {
+    margin-top:-20px;
+    margin-bottom: 10px;
+}
+
+.enlace {
+    color: #171717;
+    font-family: Nova;
+    font-size: 20px;
+    text-transform: none;
+}
+
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    font-family: Indie, Arial, Helvetica, sans-serif;
+    position: relative;
 }
