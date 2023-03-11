@@ -164,6 +164,15 @@ button {
     background: gray;
 }
 
+.fotoinicial2 {
+    background-color: black;
+    width: 100%;
+    margin-right: 0px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .formulario {
     display: block;
     align-items: center;
@@ -241,6 +250,123 @@ input::placeholder {
     text-transform: uppercase;
     font-family: Nova;
     transform: translate(-137%, 0%);
+}
+
+
+.infofinal {
+    margin-top: 110px;
+    margin-bottom: -50px;
+    display: flex;
+    background-color: #f6f6f6;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+}
+/*la sección*/
+
+.letras::after{
+    background: #0e1a23;
+    content: " ";
+    display: block;
+    height: 3px;
+    margin-bottom: 20px;
+    width: 45px;
+}
+/*la ralla*/
+
+.location {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    color: #d11a20;
+    font-family: Nova;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+/*el texto*/
+
+.fotolocation {
+    display: flex;
+    height: 480px;
+    margin-bottom: 27px;
+    position: relative;
+    margin-right: 30px;
+}
+/*la foto*/
+
+.infolocation {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: Nova;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: none;
+}
+
+.contact {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    color: #d11a20;
+    font-family: Nova;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contact-info-titleM {
+    color: #171717;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 11px;
+    margin-top: 40%; /*centrado*/
+}
+
+.contact-info-title {
+    color: #171717;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 11px;
+}
+
+.contact-info-enlace {
+    margin-top:-20px;
+    margin-bottom: 30px; /*separación arriba y abajo*/
+    margin-left: -30px;
+}
+
+.enlace {
+    color: #171717;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-transform: none;
+}
+
+#submit2 {
+    position: relative;
+    background-color: red;
+    color: white;
+    border: 2px solid transparent;
+    top: 40px;
+    height: 50px;
+    border-radius: 99px;
+    width: 225px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: Nova;
+    transform: translate(-445%, 0%);
 }
 
 footer {

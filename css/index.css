@@ -130,6 +130,9 @@ div#slider {background-image: url('../images/imagen1.png');
     font-family: Nova;
 }
 
+.info1 .rojo {
+    color: red
+}
 
 .info2 {
     margin-top: 30px;
