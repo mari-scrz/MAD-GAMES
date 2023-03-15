@@ -41,18 +41,45 @@ body {
     flex-direction: column;
 } 
 
-.fotoinicial {
-    background-color: black;
+.hero{
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.699) 0%, rgba(0, 0, 0, 0.692) 100%), url("../images/about\ us.jpeg");
     width: 100%;
-    margin-right: 0px;
-    display: block;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
 }
 
-.about-us {
-    width: 120vh;
-    margin-bottom: 50px;
-    margin-top: 110px;
-    margin-left: 17%;
+.textos-hero{
+    height: 740px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mad {
+    font-size: 70px;
+    margin-bottom: -50px;
+    font-family: Nova;
+    opacity: 0.3;
+}
+
+.games {
+    font-size: 45px;
+    font-family: Nova;
+    letter-spacing: 5px;
+    opacity: 0.3;
+}
+
+.textomg {
+    font-size: 18px;
+    text-align: center;
+    opacity: 0.7;
 }
 
 .flex-container {
@@ -164,13 +191,71 @@ button {
     background: gray;
 }
 
-.fotoinicial2 {
+.cont {
     background-color: black;
     width: 100%;
     margin-right: 0px;
     display: block;
     margin-top: 40px;
-    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+}
+
+.slogan {
+    width: 120vh;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 260px;
+    font-family: Nova;
+    font-size: 40px;
+}
+
+.galeria{
+    background: #f2f2f2;
+    align-items: center;
+}
+
+.contenedor{
+    padding: 80px 0;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    color: black;
+    font-family: Nova;
+}
+
+.titulo::after{
+    background: red;
+    content: "  ";
+    display: block;
+    height: 3px;
+    margin-bottom: 20px;
+    width: 45px;
+    margin-left: 48.5%;
+    margin-top: 8px;
+}
+
+.galeria-cont{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin-left: 15%;
+}
+
+.galeria-cont >img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    overflow: hidden;
 }
 
 .formulario {
@@ -250,122 +335,6 @@ input::placeholder {
     text-transform: uppercase;
     font-family: Nova;
     transform: translate(-137%, 0%);
-}
-
-
-.infofinal {
-    margin-top: 110px;
-    margin-bottom: -50px;
-    display: flex;
-    background-color: #f6f6f6;
-    justify-content: center;
-    width: 100%;
-}
-/*la sección*/
-
-.letras::after{
-    background: #0e1a23;
-    content: " ";
-    display: block;
-    height: 3px;
-    margin-bottom: 20px;
-    width: 45px;
-}
-/*la ralla*/
-
-.location {
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    color: #d11a20;
-    font-family: Nova;
-    font-size: 45px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-/*el texto*/
-
-.fotolocation {
-    display: flex;
-    height: 480px;
-    margin-bottom: 27px;
-    position: relative;
-    margin-right: 30px;
-}
-/*la foto*/
-
-.infolocation {
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    font-family: Nova;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: none;
-}
-
-.contact {
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    color: #d11a20;
-    font-family: Nova;
-    font-size: 45px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.contact-info-titleM {
-    color: #171717;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 11px;
-    margin-top: 40%; /*centrado*/
-}
-
-.contact-info-title {
-    color: #171717;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 11px;
-}
-
-.contact-info-enlace {
-    margin-top:-20px;
-    margin-bottom: 30px; /*separación arriba y abajo*/
-    margin-left: -30px;
-}
-
-.enlace {
-    color: #171717;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-transform: none;
-}
-
-#submit2 {
-    position: relative;
-    background-color: red;
-    color: white;
-    border: 2px solid transparent;
-    top: 40px;
-    height: 50px;
-    border-radius: 99px;
-    width: 225px;
-    font-size: 17px;
-    text-transform: uppercase;
-    font-family: Nova;
-    transform: translate(-445%, 0%);
 }
 
 footer {

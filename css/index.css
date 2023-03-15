@@ -232,7 +232,7 @@ input::placeholder {
 /*la sección*/
 
 .letras::after{
-    background: #0e1a23;
+    background: red;
     content: " ";
     display: block;
     height: 3px;
@@ -249,7 +249,7 @@ input::placeholder {
     position: relative;
     display: inline-block;
     text-align: left;
-    color: #d11a20;
+    color: black;
     font-family: Nova;
     font-size: 45px;
     font-weight: 800;
@@ -286,7 +286,7 @@ input::placeholder {
     position: relative;
     display: inline-block;
     text-align: left;
-    color: #d11a20;
+    color: black;
     font-family: Nova;
     font-size: 45px;
     font-weight: 800;
