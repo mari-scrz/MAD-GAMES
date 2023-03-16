@@ -32,6 +32,11 @@ a {
     src: url('../fonts/Nova/Nova.otf')
 }
 
+@font-face {
+    font-family: Nova-regular;
+    src: url('../fonts/Nova/Nova-regular.otf')
+}
+
 body {margin: 0;} /*ahora ya todo está pegado*/
 
 div#slider {background-image: url('../images/imagen1.png');
@@ -54,6 +59,20 @@ div#slider {background-image: url('../images/imagen1.png');
     50% {background-image: url('../images/imagen3.png');}
     75% {background-image: url('../images/imagen4.png');}
     100% {background-image: url('../images/imagen5.png');}
+}
+
+.logo {
+    position: absolute;
+    height: 80px;
+    margin-left: -30%;
+    margin-top: -10px;
+}
+
+.logo2 {
+    position: absolute;
+    height: 170px;
+    transform: translate(450%);
+    margin-top: -170px;
 }
 
 .centrado{
@@ -131,7 +150,7 @@ div#slider {background-image: url('../images/imagen1.png');
 }
 
 .info1 .rojo {
-    color: red
+    color: red;
 }
 
 .info2 {
@@ -142,6 +161,7 @@ div#slider {background-image: url('../images/imagen1.png');
     position: relative;
     display: inline-block;
     text-align: justify;
+    font-family: Nova-regular;
 }
 
 .formulario {
@@ -168,6 +188,7 @@ div#slider {background-image: url('../images/imagen1.png');
     color: gray;
     text-align: center;
     margin-top: 30px;
+    font-family: Nova-regular;
 }
 
 .caption::after {
@@ -175,7 +196,7 @@ div#slider {background-image: url('../images/imagen1.png');
     content: "";
     display: block;
     height: 3px;
-    margin: 20px auto 0;
+    margin: 15px auto 0;
     width: 45px;
 }
 
@@ -196,7 +217,7 @@ div#slider {background-image: url('../images/imagen1.png');
     padding: 10px;
     font-size: 16px;
     border: 0;
-    font-family: sans-serif;
+    font-family: Nova-regular;
     margin-left: 32%;
 }
 
