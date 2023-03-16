@@ -8,6 +8,20 @@ header {
     z-index: 2;
 }
 
+.logo {
+    position: absolute;
+    height: 80px;
+    margin-left: -30%;
+    margin-top: -10px;
+}
+
+.logo2 {
+    position: absolute;
+    height: 170px;
+    transform: translate(450%);
+    margin-top: -170px;
+}
+
 nav { 
     text-align: center;
     width: 100%;
@@ -30,6 +44,16 @@ a {
 @font-face {
     font-family: Nova;
     src: url('../fonts/Nova/Nova.otf')
+}
+
+@font-face {
+    font-family: Nova-regular;
+    src: url('../fonts/Nova/Nova-regular.otf')
+}
+
+@font-face {
+    font-family: Nova-bold;
+    src: url('../fonts/Nova/Nova-bold.otf')
 }
 
 body {
@@ -77,9 +101,11 @@ body {
 }
 
 .textomg {
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.5;
+    font-family: Nova-regular;
+    letter-spacing: 1px;
 }
 
 .flex-container {
@@ -114,7 +140,7 @@ article {
     background: white;
     color: black;
     padding: 0px 0px;
-    font-size: 18px;
+    font-size: 16px;
     max-height: 100px; /* hasta donde se muestra el texto sin abrir*/
     overflow: hidden;
     transition:  max-height 1s;
@@ -122,12 +148,13 @@ article {
     margin-top: 100px;
     display: flex;
     align-items: center;
+    font-family: Nova-regular;
 }
 
 .texto1 {
     margin-top: 10px;
-    margin-left: 45px;
-    margin-right: 40px;
+    margin-left: 40px;
+    margin-right: 50px;
     margin-bottom: 50px;
     position: relative;
     display: inline-block;
@@ -283,6 +310,7 @@ button {
     color: gray;
     text-align: center;
     margin-top: 30px;
+    font-family: Nova-regular;
 }
 
 .caption::after {

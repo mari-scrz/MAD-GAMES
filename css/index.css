@@ -37,9 +37,14 @@ a {
     src: url('../fonts/Nova/Nova-regular.otf')
 }
 
+@font-face {
+    font-family: Nova-bold;
+    src: url('../fonts/Nova/Nova-bold.otf')
+}
+
 body {margin: 0;} /*ahora ya todo está pegado*/
 
-div#slider {background-image: url('../images/imagen1.png');
+div#slider {background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.699) 0%, rgba(0, 0, 0, 0.692) 100%), url('../images/mapa1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,11 +59,10 @@ div#slider {background-image: url('../images/imagen1.png');
 /* cambiar imagenes y el changegohira */
 
 @keyframes changegojira {
-    0% {background-image: url('../images/imagen1.png');}
-    25% {background-image: url('../images/imagen2.jpg');}
-    50% {background-image: url('../images/imagen3.png');}
-    75% {background-image: url('../images/imagen4.png');}
-    100% {background-image: url('../images/imagen5.png');}
+    0% {background-image: url('../images/mapa1.png');}
+    33% {background-image: url('../images/mapa4.png');}
+    66% {background-image: url('../images/mapa2.png');}
+    100% {background-image: url('../images/mapa3.png');}
 }
 
 .logo {
@@ -77,14 +81,14 @@ div#slider {background-image: url('../images/imagen1.png');
 
 .centrado{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-family: Nova;
     font-size: 39px;
     letter-spacing: 7px;
-    color: white;
+    color: black;
 }
 
 .fotos {
@@ -217,7 +221,7 @@ div#slider {background-image: url('../images/imagen1.png');
     padding: 10px;
     font-size: 16px;
     border: 0;
-    font-family: Nova-regular;
+    font-family: sans-serif;
     margin-left: 32%;
 }
 
@@ -268,7 +272,7 @@ input::placeholder {
     margin-right: 20px;
     margin-bottom: 50px;
     position: relative;
-    display: inline-block;
+    display: block;
     text-align: left;
     color: black;
     font-family: Nova;
@@ -279,13 +283,21 @@ input::placeholder {
 /*el texto*/
 
 .fotolocation {
-    display: flex;
-    height: 480px;
     margin-bottom: 27px;
+    position: relative;
+    margin-right: 10px;
+}
+/*la foto*/
+
+.fotolocation2 {
+    margin-bottom: 0px;
     position: relative;
     margin-right: 30px;
 }
-/*la foto*/
+
+.hola {
+    margin-top: 147px;
+}
 
 .infolocation {
     color: white;
@@ -311,7 +323,6 @@ input::placeholder {
     font-family: Nova;
     font-size: 45px;
     font-weight: 800;
-    text-transform: uppercase;
 }
 
 .contact-info-titleM {
@@ -319,7 +330,8 @@ input::placeholder {
     font-size: 14px;
     font-weight: 600;
     line-height: 11px;
-    margin-top: 50%; /*centrado*/
+    margin-top: 39%; /*centrado*/
+    font-family: Nova-regular;
 }
 
 .contact-info-title {
@@ -327,6 +339,7 @@ input::placeholder {
     font-size: 14px;
     font-weight: 600;
     line-height: 11px;
+    font-family: Nova-regular;
 }
 
 .contact-info-enlace {
@@ -338,8 +351,10 @@ input::placeholder {
 .enlace {
     color: #171717;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: -1px;
     text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -357,10 +372,10 @@ footer {
     background-color: red;
     color: white;
     border: 2px solid transparent;
-    top: 45px;
+    top: 10px;
     height: 50px;
     border-radius: 99px;
-    width: 225px;
+    width: 200px;
     font-size: 17px;
     text-transform: uppercase;
     font-family: Nova;

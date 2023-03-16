@@ -1,0 +1,270 @@
+header {
+    display: flex;
+    position: fixed;
+    top: 0px; /* Indica que está pegado a la parte de arriba*/
+    font-family: Nova, Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo {
+    position: absolute;
+    height: 80px;
+    margin-left: -30%;
+    margin-top: -10px;
+}
+
+nav { 
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 25px; /* posición del menú */
+    right: 30px; /* para compensar los 30px del a */
+}
+
+ul {
+    display: inline-flex; /* orden horizontal de la lista*/
+    list-style: none; /* para quitar el punto de los li*/
+}
+
+a { 
+    color: white;
+    text-decoration: none; /* para quitar las líneas de hipervínculos */
+    margin-left: 30px; /* agregamos un margen a la izquierda entre cada uno */
+}
+
+@font-face {
+    font-family: Nova;
+    src: url('../fonts/Nova/Nova.otf')
+}
+
+@font-face {
+    font-family: Nova-regular;
+    src: url('../fonts/Nova/Nova-regular.otf')
+}
+
+@font-face {
+    font-family: Nova-bold;
+    src: url('../fonts/Nova/Nova-bold.otf')
+}
+
+body {margin: 0;} /*ahora ya todo está pegado*/
+
+.logo {
+    position: absolute;
+    height: 80px;
+    margin-left: -30%;
+    margin-top: -10px;
+}
+
+.logo2 {
+    position: absolute;
+    height: 170px;
+    transform: translate(450%);
+    margin-top: -170px;
+}
+
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#banner {
+    margin-top:50px;
+}
+
+#banner img {
+    width: 100%;
+    margin-top:0px;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top:35%;
+    left:25%;
+    transform: translate(-40%) translate(-50%);
+    color: black;
+}
+
+#banner h2 {
+    font-size: 60px;
+    font-family: Nova;
+    letter-spacing: 2px;
+}
+
+#banner p {
+    color: black;
+    font-family: Nova-bold;
+    font-size: 20px;
+}
+
+#banner a {
+    display: block;
+    width: 100px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 15px;
+    border: solid black;
+    margin-left: 0px;
+    text-align: center;
+    font-family: Nova-bold;
+}
+
+#banner a:hover {
+    background: rgba(51,51,51,0.5);
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
+#blog h3, h4 {
+    text-align: center;
+}
+
+#blog .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#blog article {
+    margin: 15px;
+}
+
+#blog img {
+    width: 100%;
+    max-width: 280px;
+}
+
+.cont {
+    background-color: black;
+    width: 100%;
+    margin-right: 0px;
+    display: block;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+.slogan {
+    width: 120vh;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: Nova;
+    font-size: 40px;
+    height: 170px;
+    margin-left: 17.5%;
+    transform: translate(0, 38%);
+    letter-spacing: 2px;
+}
+
+.cont p {
+    margin-top: -45px;
+    text-align: center;
+}
+
+
+
+.juego {
+    margin-left: 15%;
+    width: 1000px;
+}
+
+
+
+
+.formulario {
+    display: block;
+    align-items: center;
+    background-color: #161719;
+    justify-content: center;
+    width: 78em;
+    height: 19em;
+    margin-left: auto;
+    margin-right: auto; /* para que esté en medio */
+    margin-top: 40px;
+}
+
+.jobsletter {
+    font-size: 55px;
+    font-family: Nova;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 30px;
+}
+
+.caption {
+    color: gray;
+    text-align: center;
+    margin-top: 30px;
+    font-family: Nova-regular;
+}
+
+.caption::after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 20px auto 0;
+    width: 45px;
+}
+
+.barra {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+    width: 70%;
+    text-align: center;
+}
+
+#correo {
+    width: 70%;
+    height: 60px;
+    border-radius: 99px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0;
+    font-family: sans-serif;
+    margin-left: 32%;
+}
+
+input::placeholder {
+    margin-left: 10px;
+    top: 30px;
+    position: absolute;
+}
+
+#submit {
+    position: absolute;
+    background-color: red;
+    color: white;
+    border: 2px solid transparent;
+    top: 25px;
+    height: 50px;
+    border-radius: 99px;
+    width: 225px;
+    right: 20px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: Nova;
+    transform: translate(-0%, 40%);
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 40px 0px;
+    font-family: Indie, Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 50px;
+}
