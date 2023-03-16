@@ -90,14 +90,14 @@ body {
     font-size: 70px;
     margin-bottom: -50px;
     font-family: Nova;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .games {
     font-size: 45px;
     font-family: Nova;
     letter-spacing: 5px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .textomg {
