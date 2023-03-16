@@ -161,22 +161,22 @@ function animate() {
         }
         if (moving)
         movables.forEach((movable) => {
-            movable.position.y += 5
+            movable.position.y += 3
         })
     }
     else if (keys.a.pressed && lastKey === 'a') {
         movables.forEach((movable) => {
-            movable.position.x += 5
+            movable.position.x += 3
         })
     }
     else if (keys.s.pressed && lastKey === 's') {
         movables.forEach((movable) => {
-            movable.position.y -= 5
+            movable.position.y -= 3
         })
     }
     else if (keys.d.pressed && lastKey === 'd') {
         movables.forEach((movable) => {
-            movable.position.x -= 5
+            movable.position.x -= 3
         })
     }
 }
