@@ -10,8 +10,8 @@ for (let i = 0; i < collisions.length; i+= 160) {
 }
 
 class boundary {
-    static width = 100 //30
-    static height = 100
+    static width = 30
+    static height = 30
     constructor({position}) {
         this.position = position
         this.width = 30
