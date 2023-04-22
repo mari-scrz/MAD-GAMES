@@ -8,7 +8,21 @@ const collisionsMap = []
 for (let i = 0; i < collisions.length; i+= 160) {
     collisionsMap.push(collisions.slice(i, 160 + i))
 }
-
+//maybe
+collisionsMap.forEach((row, i) => {
+    row.forEach((symbol, j) => {
+      if (symbol === 1025)
+        boundaries.push(
+          new Boundary({
+            position: {
+              x: j * Boundary.width + offset.x,
+              y: i * Boundary.height + offset.y
+            }
+          })
+        )
+    })
+  })
+//maybe
 class boundary {
     static width = 30
     static height = 30
@@ -117,16 +131,15 @@ const movables = [background, ...boundaries]
 function rectangularCollision({rectangle1, rectangle2}) {
     return (
         rectangle1.position.x + rectangle1.width >= rectangle2.position.x && 
-        rectangle1.position.x <= rectangle2.position.x + rectangle2.width &&
-        rectangle1.position.y <= rectangle2.position.y + rectangle2.height &&
-        rectangle1.position.y + rectangle1.height >= rectangle2.position.y
+        rectangle1.position.x <= rectangle2.position.x + rectangle2.width && 
+        rectangle1.position.y <= rectangle2.position.y + rectangle2.height && 
+        rectangle1.position.y + rectangle1.height >= rectangle2.position.y 
     ) }
 function animate() {
     window.requestAnimationFrame(animate)
     background.draw()
     boundaries.forEach(boundary => {
         boundary.draw()
-
         if (
             rectangularCollision({
                 rectangle1: player,
