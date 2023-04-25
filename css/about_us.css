@@ -10,16 +10,16 @@ header {
 
 .logo {
     position: absolute;
-    height: 80px;
+    height: 70px;
     margin-left: -30%;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 
 .logo2 {
     position: absolute;
-    height: 170px;
-    transform: translate(450%);
-    margin-top: -170px;
+    height: 130px;
+    transform: translate(205%);
+    margin-top: -160px;
 }
 
 nav { 
