@@ -5,28 +5,14 @@ canvas.width = 1024
 canvas.height = 576
 
 const collisionsMap = []
-for (let i = 0; i < collisions.length; i+= 160) {
+for (let i = 0; i < collisions.length; i += 160) {
     collisionsMap.push(collisions.slice(i, 160 + i))
 }
-//maybe
-collisionsMap.forEach((row, i) => {
-    row.forEach((symbol, j) => {
-      if (symbol === 1025)
-        boundaries.push(
-          new Boundary({
-            position: {
-              x: j * Boundary.width + offset.x,
-              y: i * Boundary.height + offset.y
-            }
-          })
-        )
-    })
-  })
-//maybe
+
 class boundary {
     static width = 30
     static height = 30
-    constructor({position}) {
+    constructor({ position }) {
         this.position = position
         this.width = 30
         this.height = 30
@@ -42,7 +28,7 @@ const boundaries = []
 const offset = {
     x:-420,
     y:-580
-}
+} 
 
 collisionsMap.forEach((row, i) => {
     row.forEach((symbol, j) => {
@@ -58,6 +44,7 @@ collisionsMap.forEach((row, i) => {
     })
 })
 
+console.log(boundaries)
 
 const image = new Image()
 image.src = './img/idk.png'
@@ -88,7 +75,7 @@ class Sprite {
             this.position.y,
             this.image.width / this.frames.max,
             this.image.height
-            )
+        )
     }
 }
 
