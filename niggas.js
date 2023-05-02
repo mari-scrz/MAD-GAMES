@@ -8,6 +8,7 @@ const collisionsMap = []
 for (let i = 0; i < collisions.length; i += 160) {
     collisionsMap.push(collisions.slice(i, 160 + i))
 }
+// tamaño de las boundaries
 
 class boundary {
     static width = 30
@@ -23,12 +24,14 @@ class boundary {
         c.fillRect(this.position.x, this.position.y, this.width, this.height)
     }
 }
+// color boundaries
 
 const boundaries = []
 const offset = {
     x:-420,
     y:-580
 } 
+// el personaje en el centro
 
 collisionsMap.forEach((row, i) => {
     row.forEach((symbol, j) => {
@@ -79,6 +82,7 @@ class Sprite {
         )
     }
 }
+// carga la imagen y hace que se vea (lo dibuja)
 
 const player = new Sprite({
     position: {
@@ -90,6 +94,7 @@ const player = new Sprite({
         max: 4
     }
 })
+// cortar el personaje porque en la imagen eran 4
 
 const background = new Sprite({ 
     position: {
@@ -98,6 +103,8 @@ const background = new Sprite({
     },
     image: image 
 })
+
+
 
 const keys = {
     w: {
@@ -113,6 +120,7 @@ const keys = {
         pressed: false
     }
 }
+// que se mueva con esas teclas
 
 const movables = [background, ...boundaries]
 
