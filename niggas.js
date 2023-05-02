@@ -31,7 +31,7 @@ const offset = {
     x:-420,
     y:-580
 } 
-// el personaje en el centro
+// para que las boundaries estén donde deben estar
 
 collisionsMap.forEach((row, i) => {
     row.forEach((symbol, j) => {
