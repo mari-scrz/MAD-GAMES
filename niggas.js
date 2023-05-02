@@ -43,6 +43,7 @@ collisionsMap.forEach((row, i) => {
         )
     })
 })
+// la condición para que se activen las boundaries
 
 console.log(boundaries)
 
