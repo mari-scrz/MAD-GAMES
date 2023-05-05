@@ -3,7 +3,7 @@ const c = canvas.getContext('2d')
 
 canvas.width = 1024
 canvas.height = 576
-
+//hola
 const collisionsMap = []
 for (let i = 0; i < collisions.length; i += 160) {
     collisionsMap.push(collisions.slice(i, 160 + i))
