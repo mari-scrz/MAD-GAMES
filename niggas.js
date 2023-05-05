@@ -83,7 +83,7 @@ class Sprite {
     }
 }
 // carga la imagen y hace que se vea (lo dibuja)
-
+// hokaaa
 const player = new Sprite({
     position: {
         x: canvas.width / 2 - 192 / 4 / 2,
