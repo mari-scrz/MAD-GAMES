@@ -37,10 +37,10 @@ collisionsMap.forEach((row, i) => {
     row.forEach((symbol, j) => {
         if (symbol === 1025)
         boundaries.push(
-            new boundary({
+            new Boundary({
                 position: {
-                x: j * boundary.width + offset.x,
-                y: i * boundary.height + offset.y
+                x: j * Boundary.width + offset.x,
+                y: i * Boundary.height + offset.y
                 }
             })
         )
@@ -86,6 +86,7 @@ class Sprite {
 // hokaaa
 const player = new Sprite({
     position: {
+        // 192
         x: canvas.width / 2 - 192 / 4 / 2,
         y: canvas.height / 2 - 68 / 2,
     },
