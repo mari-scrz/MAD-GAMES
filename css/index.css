@@ -366,7 +366,7 @@ footer {
     position: relative;
 }
 
-#submit2 {
+.submit2 {
     position: relative;
     background-color: red;
     color: white;
@@ -379,3 +379,13 @@ footer {
     text-transform: uppercase;
     font-family: Nova;
 }
+  
+  .fas.fa-arrow-up {
+    font-size: 20px;
+    color: white;
+  }
+
+  button.scroll-btn:hover {
+    background-color: #ff8080;
+    transition: background-color 0.3s ease;
+  }
