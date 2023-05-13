@@ -21,7 +21,7 @@ ul {
     list-style: none; /* para quitar el punto de los li*/
 }
 
-a { 
+a.rojo { 
     color: white;
     text-decoration: none; /* para quitar las líneas de hipervínculos */
     margin-left: 30px; /* agregamos un margen a la izquierda entre cada uno */
