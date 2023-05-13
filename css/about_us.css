@@ -387,7 +387,7 @@ input::placeholder {
     font-size: 17px;
     text-transform: uppercase;
     font-family: Nova;
-    transform: translate(-137%, 0%);
+    transform: translate(0%, 40%);
 }
 
 footer {
