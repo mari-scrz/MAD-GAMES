@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imágenes y texto</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		
+		.container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+			background-color: #f5f5f5;
+		}
+		
+		.text {
+			flex-basis: 40%;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.text h2 {
+			font-size: 1.5rem;
+			margin-top: 0;
+		}
+		
+		.text p {
+			font-size: 1.2rem;
+			line-height: 1.5;
+		}
+		
+		.images {
+			display: flex;
+			flex-wrap: wrap;
+			flex-basis: 60%;
+			justify-content: space-between;
+		}
+		
+		.images img {
+			border-radius: 50%;
+			margin-bottom: 20px;
+			width: 200px;
+			height: 200px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="text">
+			<h2>Título del texto</h2>
+			<p>Este es el texto que irá a la izquierda de las imágenes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum ipsum eget commodo bibendum. Fusce bibendum ac neque sit amet sollicitudin. Nullam sit amet neque ac orci efficitur suscipit in nec magna. Donec elementum est vel dapibus faucibus. Praesent malesuada enim euismod odio facilisis, sed molestie turpis varius. Duis sit amet mauris in purus dapibus efficitur non sed velit.</p>
+		</div>
+		<div class="images">
+			<img src="imagen1.jpg" alt="Imagen 1">
+			<img src="imagen2.jpg" alt="Imagen 2">
+			<img src="imagen3.jpg" alt="Imagen 3">
+			<img src="imagen4.jpg" alt="Imagen 4">
+		</div>
+	</div>
+</body>
+</html>
