@@ -176,18 +176,24 @@ section {
     display: flex;
     justify-content: center;
     background-color: #f6f6f6;
+    margin-bottom: 50px;
+    margin-top: 0px;
   }
 
   #image-container2 {
     display: flex;
     justify-content: center;
     background-color: black;
+    margin-bottom: 50px;
+    margin-top: 10px;
   }
 
   #image-container3 {
     display: flex;
     justify-content: center;
     background-color: #f6f6f6;
+    margin-bottom: 100px;
+    margin-top: 10px;
   }
 
   /* Estilos para el marco circular */
@@ -210,13 +216,14 @@ section {
 
   /* Estilos para el texto debajo de las imágenes */
   p.text {
-    font-size: 18px;
+    font-size: 28px;
     text-align: center;
-    font-family: Nova-regular;
+    font-family: Nova;
   }
 
 .fondo {
     background-color: #f5f5f5;
+    margin-top: -40px;
 }
 
 
@@ -230,7 +237,7 @@ section {
 }
 
 .container p {
-    margin: 0 0 20px 0px;
+    margin: 0 40px 20px 0px;
     font-size: 18px;
     line-height: 1.5;
 }
