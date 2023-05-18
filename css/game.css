@@ -177,7 +177,7 @@ section {
     justify-content: center;
     background-color: #f6f6f6;
     margin-bottom: 50px;
-    margin-top: 0px;
+    margin-top: 30px;
   }
 
   #image-container2 {
@@ -219,6 +219,7 @@ section {
     font-size: 28px;
     text-align: center;
     font-family: Nova;
+    margin-top: 50px;
   }
 
 .fondo {
