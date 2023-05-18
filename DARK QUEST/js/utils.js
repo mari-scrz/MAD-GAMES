@@ -33,5 +33,4 @@ function checkForCharacterCollision({
       break
     }
   }
-  console.log("nigga")
 }

@@ -1,6 +1,7 @@
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
+
 canvas.width = 1024
 canvas.height = 576
 
@@ -10,13 +11,14 @@ for (let i = 0; i < collisions.length; i += 160) {
 }
 
 const battleZonesMap = []
-for (let i = 0; i < battleZonesData.length; i += 70) {
-  battleZonesMap.push(battleZonesData.slice(i, 70 + i))
+for (let i = 0; i < battleZonesData.length; i += 160) {
+  battleZonesMap.push(battleZonesData.slice(i, 160 + i))
 }
 
+
 const charactersMap = []
-for (let i = 0; i < charactersMapData.length; i += 70) {
-  charactersMap.push(charactersMapData.slice(i, 70 + i))
+for (let i = 0; i < charactersMapData.length; i += 160) {
+  charactersMap.push(charactersMapData.slice(i, 160 + i))
 }
 console.log(charactersMap)
 
@@ -221,12 +223,12 @@ function animate() {
       const battleZone = battleZones[i]
       const overlappingArea =
         (Math.min(
-          player.position.x + player.width,
+          player.position.x + 1,
           battleZone.position.x + battleZone.width
         ) -
           Math.max(player.position.x, battleZone.position.x)) *
         (Math.min(
-          player.position.y + player.height,
+          player.position.y + 1,
           battleZone.position.y + battleZone.height
         ) -
           Math.max(player.position.y, battleZone.position.y))
@@ -237,6 +239,7 @@ function animate() {
         }) &&
         overlappingArea > (player.width * player.height) / 2 &&
         Math.random() < 0.01
+        
       ) {
         // deactivate current animation loop
         window.cancelAnimationFrame(animationId)
@@ -263,10 +266,13 @@ function animate() {
                   opacity: 0,
                   duration: 0.4
                 })
+                
               }
             })
           }
+          
         })
+
         break
       }
     }

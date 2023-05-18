@@ -116,7 +116,6 @@ function animateBattle() {
   battleAnimationId = window.requestAnimationFrame(animateBattle)
   battleBackground.draw()
 
-  console.log(battleAnimationId)
 
   renderedSprites.forEach((sprite) => {
     sprite.draw()
@@ -124,8 +123,8 @@ function animateBattle() {
 }
 
 animate()
-// initBattle()
-// animateBattle()
+//initBattle()
+//animateBattle()
 
 document.querySelector('#dialogueBox').addEventListener('click', (e) => {
   if (queue.length > 0) {
