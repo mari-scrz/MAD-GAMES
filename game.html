@@ -38,87 +38,94 @@
                 <img src="images/juego.png">
                 <div class="contenedor">
                     <h2>Dark Quest</h2>
-                    <p>Que gane el mejor...</p>
-                    <a href="DARK QUEST/juego.html">Empezar</a>
+                    <p>May the best one win...</p>
+                    <a href="DARK QUEST/juego.html">Start</a>
                 </div>
             </section>
         </main>
 
             <div class="cont">
-                <p class="slogan">BIENVENIDOS A NUESTRO JUEGO</p>
+                <p class="slogan">WELCOME TO OUR GAME</p>
             </div>
 
             <div class="fondo">
               <div class="container">
                   <p> 
-                      Yato nació en una pequeña aldea en las montañas de Japón. Desde joven, <br>
-                      mostró un gran interés por los espíritus y los seres mitológicos que forman <br>
-                      parte de la cultura japonesa. Pasaba sus días explorando los bosques cerca-<br>
-                      nos a su aldea en busca de criaturas mágicas y leyendas antiguas. Un día,<br>
-                      mientras exploraba, Yato se encontró con una extraña llama viviente que<br>
-                      parecía estar en peligro. Sin pensarlo dos veces, Yato se acercó y rescató <br>
-                      a la criatura. Para su sorpresa, la llama lo siguió y se convirtió en su fiel<br>
-                      compañera. Desde entonces, Yato y Emby se han convertido en un dúo inse-<br>
-                      parable. Emby, la llama viviente, ha demostrado tener habilidades mágicas y<br>
-                      ha ayudado a Yato a combatir a criaturas malvadas y a resolver enigmas más <br>
-                      peligrosos. Después de mucho tiempo explorando los bosques y montañas de<br>
-                      su aldea, Yato decidió que era hora de emprender una aventura más grande. <br>
-                      Junto con Emby, su fiel compañera, ha decidido explorar las islas japonesas <br>
-                      en busca de nuevas criaturas mágicas y leyendas antiguas.</p>
+                      Yato was born in a small village in the mountains of Japan. From a young <br>
+                      age, he showed a great interest in spirits and mythological beings that <br>
+                      are part of Japanese culture. He spent his days exploring the forests near <br>
+                      his village in search of magical creatures and ancient legends. One day, <br>
+                      while exploring, Yato came across a strange living flame that seemed to <br>
+                      be in danger. Without hesitation, Yato approached and rescued the creature. <br>
+                      To his surprise, the flame followed him and became his faithful companion. <br>
+                      Since then, Yato and Emby have become an inseparable duo. Emby, the <br>
+                      living flame, has shown magical abilities and has helped Yato fight evil <br>
+                      creatures and solve more dangerous puzzles. After a long time exploring <br>
+                      the forests and mountains of his village, Yato decided it was time to <br>
+                      embark on a bigger adventure. Along with Emby, his faithful companion, <br>
+                      he has decided to explore the Japanese islands in search of new magical <br>
+                      creatures and ancient legends.
               </div>
               </div>
               
 
-            <p class="text">Conoce a Yato:</p>
+            <div class="meet">
+                <p class="text1">Yato</p>
+                <p class="text2">Emby</p>
+                <p class="text3">Draggle</p>
+            </div>
             <div id="image-container">
                 <div class="circle">
-                  <img src="images/im1.png" alt="Imagen 1">
+                  <img src="images/im2.png" alt="Imagen 1">
                 </div>
                 <div class="circle">
-                  <img src="images/im2.png" alt="Imagen 2">
+                  <img src="images/fuego1.png" alt="Imagen 2">
                 </div>
                 <div class="circle">
-                  <img src="images/im3.png" alt="Imagen 3">
-                </div>
-                <div class="circle">
-                  <img src="images/im4.png" alt="Imagen 4">
+                  <img src="images/dragg1.png" alt="Imagen 3">
                 </div>
             </div>
 
+            <button id="scroll-btn" onclick="scrollToTop()" style="position: fixed; bottom: 30px; right: 30px; background-color:red; border: none; padding:10px; width: 35px; border-radius: 50%; color: white; z-index: 3; cursor: pointer;">▲</button>
+
+            <script>
+
+            function scrollToTop() {
+            const scrollDuration = 1000; // Duración del desplazamiento en milisegundos
+            const scrollStep = -window.scrollY / (scrollDuration / 15); // Cálculo de la cantidad de píxeles que debe desplazarse en cada intervalo de tiempo
+            const scrollInterval = setInterval(() => {
+                if (window.scrollY !== 0) {
+                window.scrollBy(0, scrollStep); // Desplaza la página
+                } else {
+                clearInterval(scrollInterval); // Detiene el desplazamiento cuando se llega al tope de la página
+                }
+            }, 15);
+            }
+
+            const scrollButton = document.getElementById("scroll-btn");
+
+            function scrollToTop() {
+            const scrollDuration = 1000; // Duración del desplazamiento en milisegundos
+            const scrollStep = -window.scrollY / (scrollDuration / 15); // Cálculo de la cantidad de píxeles que debe desplazarse en cada intervalo de tiempo
+            const scrollInterval = setInterval(() => {
+                if (window.scrollY !== 0) {
+                window.scrollBy(0, scrollStep); // Desplaza la página
+                } else {
+                clearInterval(scrollInterval); // Detiene el desplazamiento cuando se llega al tope de la página
+                }
+            }, 15);
+            }
+
+            window.onscroll = () => {
+            if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+            };
+            </script>
 
 
-              <p class="text">Conoce a Emby:</p>
-            <div id="image-container2">
-                <div class="circle">
-                  <img src="images/fuego1.png" alt="Imagen 1">
-                </div>
-                <div class="circle">
-                  <img src="images/fuego2.png" alt="Imagen 2">
-                </div>
-                <div class="circle">
-                  <img src="images/fuego3.png" alt="Imagen 3">
-                </div>
-                <div class="circle">
-                  <img src="images/fuego4.png" alt="Imagen 4">
-                </div>
-              </div>
-              
-
-              <p class="text">Conoce a Draggle:</p>
-            <div id="image-container3">
-                <div class="circle">
-                  <img src="images/dragg1.png" alt="Imagen 1">
-                </div>
-                <div class="circle">
-                  <img src="images/dragg2.png" alt="Imagen 2">
-                </div>
-                <div class="circle">
-                  <img src="images/dragg3.png" alt="Imagen 3">
-                </div>
-                <div class="circle">
-                  <img src="images/dragg4.png" alt="Imagen 4">
-                </div>
-              </div>
             
 
 

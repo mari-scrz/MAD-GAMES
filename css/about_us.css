@@ -153,8 +153,8 @@ article {
 
 .texto1 {
     margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 50px;
+    margin-left: 50px;
+    margin-right: 0px;
     margin-bottom: 50px;
     position: relative;
     display: inline-block;
@@ -164,8 +164,8 @@ article {
 
 .texto2 {
     margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 140px;
+    margin-right: -70px;
     margin-bottom: 50px;
     position: relative;
     display: inline-block;
@@ -174,8 +174,8 @@ article {
 
 .texto3 {
     margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 45px;
+    margin-left: 150px;
+    margin-right: 60px;
     margin-bottom: 50px;
     position: relative;
     display: inline-block;

@@ -169,33 +169,53 @@ section {
     text-align: center;
 }
 
+/*la caja */
+.meet {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 60px;
+}
+
+/*los textos de meet*/
+.text1 {
+    font-size: 28px;
+    text-align: center;
+    font-family: Nova;
+    margin-top: 50px;
+    margin-right: 170px;
+    margin-left: 20px;
+    color: white;
+}
+
+.text2 {
+    font-size: 28px;
+    text-align: center;
+    font-family: Nova;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: white;
+}
+
+.text3 {
+    font-size: 28px;
+    text-align: center;
+    font-family: Nova;
+    margin-top: 50px;
+    margin-left: 180px;
+    color: white;
+}
 
 
 /* Estilos para el contenedor de las imágenes */
 #image-container {
     display: flex;
     justify-content: center;
-    background-color: #f6f6f6;
-    margin-bottom: 50px;
-    margin-top: 30px;
-  }
-
-  #image-container2 {
-    display: flex;
-    justify-content: center;
     background-color: black;
-    margin-bottom: 50px;
-    margin-top: 10px;
+    margin-bottom: 80px;
   }
 
-  #image-container3 {
-    display: flex;
-    justify-content: center;
-    background-color: #f6f6f6;
-    margin-bottom: 100px;
-    margin-top: 10px;
-  }
-
+  
   /* Estilos para el marco circular */
   .circle {
     border-radius: 50%;
@@ -205,6 +225,7 @@ section {
     width: 200px;
     height: 200px;
     margin: 20px;
+    margin-bottom: 60px;
   }
 
   /* Estilos para las imágenes */
