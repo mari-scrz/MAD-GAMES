@@ -223,12 +223,12 @@ function animate() {
       const battleZone = battleZones[i]
       const overlappingArea =
         (Math.min(
-          player.position.x + 1,
+          player.position.x + 5,
           battleZone.position.x + battleZone.width
         ) -
           Math.max(player.position.x, battleZone.position.x)) *
         (Math.min(
-          player.position.y + 1,
+          player.position.y + 5,
           battleZone.position.y + battleZone.height
         ) -
           Math.max(player.position.y, battleZone.position.y))
@@ -238,7 +238,7 @@ function animate() {
           rectangle2: battleZone
         }) &&
         overlappingArea > (player.width * player.height) / 2 &&
-        Math.random() < 0.01
+        Math.random() < 0.001
         
       ) {
         // deactivate current animation loop
